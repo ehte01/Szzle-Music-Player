@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szzle Player - Music On Demand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="music-player">
+            <div class="topbar">
+                <i class="fa-solid fa-angle-down"></i>
+                <span>Now Playing</span>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="img-area">
+                <img src="./images/music-1.jpg" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar"></div>
+                <div class="timer">
+                    <span class="current">0:00</span>
+                    <span class="total-duration"></span>
+                </div>
+            </div>
+           <audio src="" id="main-audio"></audio>
+            <div class="controls">
+                <i class="fa-solid fa-repeat" id="repeat-plist" title="Playlist Looped"></i>
+                <i class="fa-solid fa-backward" id="prev" title="Previous Song"></i>
+                <div class="play-pause">
+                    <i class="fa-solid fa-play" title="Play" id="setP"></i>
+                </div>
+                <i class="fa-solid fa-forward" id="next" title="Next Song"></i>
+                <i class="fa-solid fa-music" id="more-music"></i>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="fa-solid fa-music"></i>
+                        <span>Music List</span>
+                    </div>
+                    <i class="fa-regular fa-circle-xmark" id="close"></i>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="music-list.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
